@@ -1,0 +1,48 @@
+---
+const CURSOS = [
+    {
+        title: "Spring Framework 6 & Spring Boot 3 desde cero a experto",
+        description: "Construye aplicaciones web Spring Framework 6 y Spring Boot 3: AOP, JPA, Security JWT, RESTful, AWS EC2, Angular, React",
+        author: "Andrés Guzman",
+        image: "../CursoSpring.jpg",
+        link: "https://www.udemy.com/certificate/UC-c1076d34-b9dd-4c91-b08d-35832c22de07/",
+    },
+    {
+        title: "Formación Académica",
+        description: "Malla curricular, Ingeniería en Sistemas en la Universidad Industrial de Santander, donde se detallan las materias y habilidades adquiridas a lo largo de mi formación.",
+        author: "Universidad Industrial de Santander",
+        image: "../TrainingUIS.jpg",
+        link: "https://uis.edu.co/wp-content/uploads/2023/02/Plan-de-estudios-N10-Actualizado.pdf",
+    },
+];
+---
+
+<section class="mt-5">
+  <div class="grid grid-cols-1 gap-5">
+    {CURSOS.map(({ title, description, author, image, link }) => (
+      <article class=" bg-transparent p-[2px] flex items-center rounded-xl overflow-hidden hover:bg-gray-900 transition duration-300 transform hover:scale-105 shadow-[0_5px_6px_0_rgba(255,255,255,0.1)]">
+        <div class="relative w-40 h-full overflow-hidden rounded-l-xl">
+          <img
+            src={image}
+            alt={title}
+            class="w-full h-full object-cover transition-transform duration-300 hover:scale-110 rounded-l-xl"
+          />
+        </div>
+        <div class="p-5 flex flex-col justify-between w-full">
+          <h2 class="text-yellow-200 text-xl font-semibold text-white transition">{title}</h2>
+          <p class="text-sm text-gray-400 mt-2">{description}</p>
+          <div class="flex items-center justify-between text-sm mt-4">
+            <span class="text-blue-400">{author}</span>
+            <a
+              href={link}
+              target="_blank"
+              class="text-red-300/90 font-semibold hover:text-red-400/90 transition"
+            >
+              Ver curso
+            </a>
+          </div>
+        </div>
+      </article>
+    ))}
+  </div>
+</section>
