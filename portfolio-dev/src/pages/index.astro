@@ -3,7 +3,6 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "@fontsource-variable/onest";
-import Badge from "../components/Badge.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import SocialPill from "../icons/SocialPill.astro";
 import Projects from "../components/Projects.astro";
@@ -18,8 +17,8 @@ import Courses from "../components/Courses.astro";
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout 
-    title="Portfolio Jhon Almanzar - Desarrollador - Back End - Front End - Full Stack - Java"
+<Layout
+	title="Portfolio Jhon Almanzar - Desarrollador - Back End - Front End - Full Stack - Java"
 	description="Contrata a Jhon Almanzar desarrollador Back End, Full Stack. Programador junior especializado en spring boot"
 >
 	<Header id="top" />
@@ -33,73 +32,96 @@ import Courses from "../components/Courses.astro";
 			<h1
 				class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
 			>
-				Hey, soy Jhon Almanzar  <a
+				Hey, soy Jhon Almanzar <a
 					href="https://www.linkedin.com"
 					class="flex justify-center items-center"
 					target="_blank"
 					rel="noopener"
 				>
-					<Badge>Disponible para trabajar</Badge>
 				</a>
 			</h1>
 			<h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
-				Estudiante de octavo semestre de Ingeniería en Sistemas, <span class="text-red-200/90"> desarrollador web</span> con enfoque en <span class="text-yellow-200"> backend utilizando Spring Boot y conocimientos en frontend con Angular y React</span>, lo que me permite contribuir como <span class="text-red-200/90">desarrollador full stack.</span>
+				<span class="text-red-200/90">Desarrollador web.</span> Mi especialidad es el <span class="text-yellow-200">desarrollo Back-End en java con Spring Boot</span>, complementado por concocimiento en <span class="text-yellow-200">Front-End usando Angular y React</span>, lo que me permite desempeñarme como desarrollador <span class="text-red-200/90">Full Stack</span> cuando sea necesario.
 			</h2>
 
 			<nav class="flex gap-x-4 mt-8">
-				<SocialPill href="https://www.linkedin.com">
+				<SocialPill
+					href="https://www.linkedin.com/in/jhon-jairo-almanzar-quintero-66b841345">
 					<Linkedin class="size-6" />
-					    LinkedIn
+					LinkedIn
 				</SocialPill>
-				<SocialPill href="https://github.com/">
+				<SocialPill href="https://github.com/JhonAlmanzarQ">
 					<GitHub class="size-6" />
-						GitHub
+					GitHub
 				</SocialPill>
-				<SocialPill href="https://github.com/">
+				<SocialPill href="https://mail.google.com/mail/?view=cm&fs=1&to=jhonalmanzar003@gmail.com">
 					<Mail class="size-6" />
-						Mail
+					Mail
 				</SocialPill>
 			</nav>
 		</section>
 
-		<SectionContainer id="proyectos" class="w-full md:w-[600px] lg:w-[740px] mx-auto pt-0 pb-20 mt-9">
+		<SectionContainer
+			id="proyectos"
+			class="w-full md:w-[600px] lg:w-[740px] mx-auto pt-0 pb-20 mt-9"
+		>
 			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
-				
 				Proyectos
 			</h2>
 			<p>
-				En esta sección encontrarás los proyectos que he desarrollado, cada uno diseñado para reflejar mis conocimientos técnicos, mi capacidad de resolución de problemas y mi compromiso con la excelencia. Estos proyectos representan mi pasión por el desarrollo web y mi habilidad para aprender y adaptarme a nuevas tecnologías.
+				En esta sección encontrarás los proyectos que he desarrollado,
+				cada uno diseñado para reflejar mis conocimientos técnicos, mi
+				capacidad de resolución de problemas y mi compromiso con la
+				excelencia. Estos proyectos representan mi pasión por el
+				desarrollo web y mi habilidad para aprender y adaptarme a nuevas
+				tecnologías.
 			</p>
 			<Projects />
 		</SectionContainer>
 
-		<SectionContainer id="cursos" class="w-full md:w-[600px] lg:w-[740px] mx-auto pt-0 pb-20 mt-[200px]">
+		<SectionContainer
+			id="cursos"
+			class="w-full md:w-[600px] lg:w-[740px] mx-auto pt-0 pb-20 mt-[200px]"
+		>
 			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
 				Formación
 			</h2>
 			<p>
-				En esta sección se encuentran los cursos que he completado, tanto de manera autodidacta como parte de mi formación académica en la Universidad Industrial de Santander. Estos estudios reflejan mi compromiso con el aprendizaje continuo y mi preparación para enfrentar desafíos tecnológicos en el ámbito profesional.
+				En esta sección se encuentran los cursos que he completado,
+				tanto de manera autodidacta como parte de mi formación académica
+				en la Universidad Industrial de Santander. Estos estudios
+				reflejan mi compromiso con el aprendizaje continuo y mi
+				preparación para enfrentar desafíos tecnológicos en el ámbito
+				profesional.
 			</p>
 			<Courses />
 		</SectionContainer>
 
-		<SectionContainer id="sobre-mi" class="w-full md:w-[600px] lg:w-[740px] mx-auto pt-0 pb-20 mt-[200px]">
+		<SectionContainer
+			id="sobre-mi"
+			class="w-full md:w-[600px] lg:w-[740px] mx-auto pt-0 pb-20 mt-[200px]"
+		>
 			<About />
 		</SectionContainer>
 
-		<SectionContainer id="tecnologias" class="w-full md:w-[600px] lg:w-[740px] mx-auto pt-0 pb-20 mt-[200px]">
+		<SectionContainer
+			id="tecnologias"
+			class="w-full md:w-[600px] lg:w-[740px] mx-auto pt-0 pb-20 mt-[200px]"
+		>
 			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
 				Tecnologías
 			</h2>
-			  
+
 			<p>
-				Esta sección refleja las tecnologías y herramientas clave que utilizo para desarrollar soluciones eficientes y de calidad. Mi enfoque es siempre adaptar mis habilidades a las necesidades del proyecto y mantenerme actualizado en un campo en constante evolución
+				Esta sección refleja las tecnologías y herramientas clave que
+				utilizo para desarrollar soluciones eficientes y de calidad. Mi
+				enfoque es siempre adaptar mis habilidades a las necesidades del
+				proyecto y mantenerme actualizado en un campo en constante
+				evolución
 			</p>
 			<Technologies />
 		</SectionContainer>
 
 		<Footer />
-
 	</main>
-
 </Layout>
